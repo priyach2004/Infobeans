@@ -25,13 +25,3 @@ while i<len(s):
     result = result+" "+word
     i=c+1
 print(f"Encrypted Message:{result}")
-'''
-
-s=input("Enter the string ")
-
-i=0
-x=0
-s1=""
-st=""
-while i<len(s)
-'''

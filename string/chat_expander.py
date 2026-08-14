@@ -49,22 +49,11 @@ Total Characters: 10
 '''
 
 s=input("Enter compressed character: ")		#R3S2t5
-i=0
 result = ""
-while i<len(s):
-	if 65<=ord(s[i])<=90:
-		ch = chr(ord(s[i])+32)
-		i+=1
-		continue
-	elif 97<=ord(s[i])<=122:
-		ch = s[i]
-		i+=1
-		continue
-	if s[i] in "1234567890":
-		dig = int(s[i])
-		j=1
-		while j<=dig:
-			result = result+ch
-			j+=1
-	i+=1
+for x in s:
+    if x.isalpha():
+        result=result+x
+        prev=x
+    else:
+        result=result+prev*(int(x)-1)
 print(result)

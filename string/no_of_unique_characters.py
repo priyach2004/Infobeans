@@ -16,6 +16,7 @@ Output:
 
 '''
 
+'''
 s=input("Input: ")   #abcddbccaa
 result=s[0]
 i=1
@@ -28,4 +29,12 @@ while i<len(s):
     else:
         result=result+s[i]
     i+=1
+print(f"Number of Unique Characters = {len(result)}")
+'''
+
+s=input("Input: ")   #abcddbccaa
+result=""
+for ch in s:
+    if ch not in result:
+        result=result+ch
 print(f"Number of Unique Characters = {len(result)}")
